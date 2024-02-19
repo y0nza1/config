@@ -1,24 +1,33 @@
-# y0nza1's .basrc file
+# y0nza1's .bashrc file
 # Last updated: 2024-02-18
 
 # echo Yo yo yo.
 
-teal=$(tput setaf 122);
-lteal=$(tput setaf 123);
-red=$(tput setaf 160);
-white=$(tput setaf 255);
+# Colors: Look up "256 color charts".
+# Reset colors with $(tput sgr0).
 bold=$(tput bold);
 reset=$(tput sgr0);
 
+black=$(tput setaf 0);
+blue=$(tput setaf 123);
+cyan=$(tput setaf 122);
+green=$(tput setaf 49);
+orange=$(tput setaf 166);
+red=$(tput setaf 160);
+white=$(tput setaf 255);
+yellow=$(tput setaf 220);
+
 
 PS1="\[${bold}\]\n"; # bold for prompt
-PS1+="\[${teal}\]\u"; # user color
+PS1+="\[${cyan}\]\u"; # user color
 PS1+="\[${white}\]@"; # @ color
-PS1+="\[${lteal}\]\h"; # host color
-PS1+="\[${lteal}\] \w"; # filepath directory color
+PS1+="\[${blue}\]\h"; # host color
+PS1+="\[${blue}\] \w"; # filepath directory color
 PS1+="\n"; # line break
-PS1+="\[${lteal}\]\W"; # basename directory color
-PS1+="\[${white}\] $ >> \[${reset}\]"; # $ and reset color/bold
+PS1+="\[${blue}\]\W"; # basename directory color
+PS1+="\[${cyan}\] $";
+PS1+="\[${white} >> \[${reset}\]"; # $ and reset color/bold
+tput sgr0
 
 export PS1; 
 
@@ -31,11 +40,8 @@ export PS1;
 # \w    the current working directory
 # \W    the basename of the current working directory
 
-# Colors: Look up "256 color charts".
-# Reset colors with $(tput sgr0).
 
 # Escape characters:
 # Use these to fix weird cursor behavior.
 # \[    before
 # \]    after
-$()
