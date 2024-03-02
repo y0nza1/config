@@ -1,10 +1,23 @@
 ## Additional crap I always like having on my systems...
 
+#===========#
+# ALACRITTY #
+#===========#
+lightweight term emulator
+kind of annoying install - make sure to redirect
+PATH=/usr/local/bin afterwards
+cargo install alacritty (check commands for cargo)
+quick n' dirty themes:https://github.com/alacritty/alacritty-theme
+i like aya_dark personally
+
 #==========#
 # COMMANDS #
 #==========#
 stuff you take for granted, basically
-sudo apt install curl
+sudo apt install curl // it's curl
+sudo apt install xinput // for checking input devices
+sudo apt install pulseaudio // audio
+curl https://sh.rustup.rs -sSf | sh // cargo and rust
 
 #=========#
 # DISCORD #
@@ -16,13 +29,13 @@ run .debs using sudo apt install ./whatever.deb
 #======#
 # KEYD #
 #======#
-read more under fresh section
+read more under fresh section; grab from repo
 ensure that default.conf has a place in /etc/keyd/default.conf
 
 #========#
 # NEOVIM #
 #========#
-building from source is pain on debian, just get appimage
+building from source is pain on debian, just get appimage...
 PLEASE. and follow the appimage instructions on github.
 
 #=======#
@@ -30,24 +43,22 @@ PLEASE. and follow the appimage instructions on github.
 #=======#
 grab from https://github.com/FortAwesome/Font-Awesome/releases
 
-
-
 #=======#
 # FRESH #
 #=======#
 based on my fully fresh debian install
 
-## grabbing i3 then rebooting and swapping
+## grabbing i3 then rebooting and swapping ##
 sudo apt-get install i3
 sudo reboot
 
-## some essential stuff out of the way
+## some essential stuff out of the way ##
 sudo apt install git-all
 cd Documents; mkdir git; cd git
 sudo apt-get install build-essential // provides make
 
-## keyd is my favorite  remapping utility
-## note: use keyd man to see additional helpful commands
+## keyd is my favorite  remapping utility ##
+## note: use keyd man to see additional helpful commands ##
 git clone https://github.com/rvaiya/keyd 
 cd keyd
 make && sudo make install

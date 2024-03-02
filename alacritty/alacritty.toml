@@ -1,0 +1,73 @@
+# $HOME/.config/alacritty/alacritty.toml
+# by Rito Ghosh 2023-10-06
+
+# Alacritty now uses TOML formatting for its config files.
+# This is a simple example.
+
+# There are the specification here: https://github.com/alacritty/alacritty/blob/master/extra/man/alacritty.5.scd
+# It is not obvious how it translates to TOML. But it is extremely straightforward.
+
+# example: WINDOW, COLORS, etc. are tables, and should be represented as [window], [colors], respectively.
+# specifics of variables go under them. e.g.- look under "dynamic_padding" under-
+# https://github.com/alacritty/alacritty/blob/master/extra/man/alacritty.5.scd#window
+# write `dynamic_padding = true` (without backticks -`) under the table [window]
+# for variables with multiple values, use "dotted keys". Like setting `padding.x = 5` under [window].
+# This is simple. If not clear, do several trials and errors.
+
+# Below is my initial set-up. The TOML homepage (https://toml.io/en/v1.0.0) was very helpful in figuring this out. 
+# I put the file alacritty.toml in $HOME/.config/alacritty. However it can be kept anywhere among the places mentioned in
+# https://github.com/alacritty/alacritty/tree/master#configuration
+
+#import = [
+#    "~/.config/alacritty/themes/themes/ayu_dark.toml"
+#    ]
+
+[window]
+
+opacity = 0.5
+
+padding.x = 10
+padding.y = 10
+
+decorations = "Full"
+#decorations_theme_variant = "Dark"
+
+dynamic_title = true
+
+[font]
+
+normal.family = "FantasqueSansM Nerd Font Mono"
+bold.family = "FantasqueSansM Nerd Font Mono"
+italic.family = "FantasqueSansM Nerd Font Mono"
+bold_italic.family = "FantasqueSansM Nerd Font Mono"
+
+size = 9.0
+
+# Colors (Adapted from 'Moonbow')
+
+# Default colors
+[colors.primary]
+background = '#0D1016'
+foreground = '#928374'
+
+# Normal colors
+[colors.normal]
+black   = '#0A0E14'
+red     = '#CC241D'
+green   = '#98971A'
+yellow  = '#B57614'
+blue    = '#458588'
+magenta = '#9F3F71'
+cyan    = '#427b58'
+white   = '#F2E5BC'
+
+# Bright colors
+[colors.bright]
+black   = '#686868'
+red     = '#FB4934'
+green   = '#C2D94C'
+yellow  = '#FFB454'
+blue    = '#59C2FF'
+magenta = '#FFEE99'
+cyan    = '#95E6CB'
+white   = '#FFFFFF'
