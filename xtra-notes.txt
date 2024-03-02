@@ -1,0 +1,51 @@
+## Additional crap I always like having on my systems...
+
+#==========#
+# COMMANDS #
+#==========#
+stuff you take for granted, basically
+sudo apt install curl
+
+#=========#
+# DISCORD #
+#=========#
+grab official deb file from website
+put in ~/Downloads
+run .debs using sudo apt install ./whatever.deb
+
+#======#
+# KEYD #
+#======#
+read more under fresh section
+ensure that default.conf has a place in /etc/keyd/default.conf
+
+#========#
+# NEOVIM #
+#========#
+building from source is pain on debian, just get appimage
+PLEASE. and follow the appimage instructions on github.
+
+#=======#
+# FRESH #
+#=======#
+based on my fully fresh debian install
+
+## grabbing i3 then rebooting and swapping
+sudo apt-get install i3
+sudo reboot
+
+## some essential stuff out of the way
+sudo apt install git-all
+cd Documents; mkdir git; cd git
+sudo apt-get install build-essential // provides make
+
+## keyd is my favorite  remapping utility
+## note: use keyd man to see additional helpful commands
+git clone https://github.com/rvaiya/keyd 
+cd keyd
+make && sudo make install
+sudo systemctl enable keyd && sudo systemctl start keyd
+sudo systemctl enable keyd // get started in session
+nano /etc/keyd/default.conf // change config if needed
+sudo keyd reload // reload after config changes
+
