@@ -26,6 +26,13 @@ building from source is pain on debian, just get appimage
 PLEASE. and follow the appimage instructions on github.
 
 #=======#
+# FONTS #
+#=======#
+grab from https://github.com/FortAwesome/Font-Awesome/releases
+
+
+
+#=======#
 # FRESH #
 #=======#
 based on my fully fresh debian install
