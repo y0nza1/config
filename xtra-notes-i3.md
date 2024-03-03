@@ -34,6 +34,7 @@ I might not catch all of these either...
 - i3blocks: `sudo apt-get install i3 blocks`; provides easier way to grab information and customize the i3bar. Grab the config from /etc/i3blocks and then redirect the path to your ~/.config/i3/ directory.
     - There's somewhat weird behavior with i3blocks and PulseAudio, so specify this command in your config file: `command=/usr/share/i3blocks/volume 5 pulse` and also be sure to do the same thing in the `etc/i3blocks`. (Run `./volume 5 pulse` there.)
     - It also isn't set to update by default, so set the interval to 1, so your volume is reflected accurately the second after you change it.
+- betterlockscreen: https://github.com/betterlockscreen/betterlockscreen, follow directions carefully.
 
 
 ## Needs

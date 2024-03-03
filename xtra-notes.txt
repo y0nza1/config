@@ -24,6 +24,10 @@ sudo apt install xinput // for checking input devices
 sudo apt install pulseaudio // audio
 curl https://sh.rustup.rs -sSf | sh // cargo and rust
 sudo apt-get install picom // windows compositor for transparency
+--- imagemagick --
+sudo apt update && sudo apt upgrade
+sudo apt install libpng-dev libjpeg-dev libtiff-dev // dependencies
+sudo apt install imagemagick // useful image tool
 
 #=========#
 # DISCORD #
