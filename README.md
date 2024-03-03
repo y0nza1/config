@@ -1,18 +1,13 @@
 # config
-My config files. Not an expert ricer; just wanted to have a repo to put my stuff whenever I bounce around environments.
+My config files. Not much of a ricer; just wanted to have a repo to put my stuff whenever I bounce around environments.
+
+<img src="https://i.postimg.cc/dQ4HpXTt/001.png" width="750">
+
+<img src="https://i.postimg.cc/rp1gJYkT/002.png" width="750">
+
+<img src="https://i.postimg.cc/HsNSsy2q/003.png" width="750">
 
 ## 2024-03-01 update: moved to i3 instead of sway
 - deleted sway stuff
-- will update with i3-related files when it is more serviceable
-
-## utilities/stuff from fresh
-`sudo apt-get install i3`
-`sudo reboot`
-
-## essentials
-- git
-    - `sudo apt install git-all`
-- make
-    - `sudo apt-get install build-essential` 
-- keyd
-    - `git clone https://github.com/rvaiya/keyd`
+## dependencices and stuff
+- notes on dependencies and necessary programs in xtra-notes and xtra-notes-i3 (for i3 specific things)
