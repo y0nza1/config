@@ -35,6 +35,7 @@ I might not catch all of these either...
     - There's somewhat weird behavior with i3blocks and PulseAudio, so specify this command in your config file: `command=/usr/share/i3blocks/volume 5 pulse` and also be sure to do the same thing in the `etc/i3blocks`. (Run `./volume 5 pulse` there.)
     - It also isn't set to update by default, so set the interval to 1, so your volume is reflected accurately the second after you change it.
 - betterlockscreen: https://github.com/betterlockscreen/betterlockscreen, follow directions carefully.
+    - In order to allow betterlockscreen to work after system suspend, be sure to follow instructions and **comment out** the default i3lock exec command in the config file.
 
 
 ## Needs

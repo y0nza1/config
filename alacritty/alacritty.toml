@@ -3,13 +3,10 @@
 
 # Alacritty now uses TOML formatting for its config files.
 # This is a simple example.
+
 # There are the specification here: https://github.com/alacritty/alacritty/blob/master/extra/man/alacritty.5.scd
 
 # example: WINDOW, COLORS, etc. are tables, and should be represented as [window], [colors], respectively.
-# specifics of variables go under them. e.g.- look under "dynamic_padding" under-
-# https://github.com/alacritty/alacritty/blob/master/extra/man/alacritty.5.scd#window
-# write `dynamic_padding = true` (without backticks -`) under the table [window]
-# for variables with multiple values, use "dotted keys". Like setting `padding.x = 5` under [window].
 # This is simple. If not clear, do several trials and errors.
 
 # Below is my initial set-up. The TOML homepage (https://toml.io/en/v1.0.0) was very helpful in figuring this out. 
@@ -41,6 +38,8 @@ bold_italic.family = "FantasqueSansM Nerd Font Mono"
 
 size = 8.0
 
+# Colors (Adapted from 'Moonbow')
+
 # Default colors
 [colors.primary]
 background = '#040F13'
@@ -49,21 +48,21 @@ foreground = '#F9D1A8'
 # Normal colors
 [colors.normal]
 black   = '#0A0E14'
-red     = '#da1d1d'
-green   = '#3dbf77'
-yellow  = '#da8e1d'
-blue    = '#113f83'
+red     = '#DA1D1D'
+green   = '#3DBF77'
+yellow  = '#DA8E1D'
+blue    = '#2660B5'
 magenta = '#9F3F71'
-cyan    = '#64dcdc'
+cyan    = '#64DCDC'
 white   = '#F2E5BC'
 
 # Bright colors
 [colors.bright]
 black   = '#0A0E14'
-red     = '#da1d1d'
-green   = '#3dbf77'
-yellow  = '#da8e1d'
-blue    = '#113f83'
+red     = '#DA1D1D'
+green   = '#3DBF77'
+yellow  = '#DA8E1D'
+blue    = '#2660B5'
 magenta = '#9F3F71'
-cyan    = '#64dcdc'
+cyan    = '#64DCDC'
 white   = '#FFFFFF'
