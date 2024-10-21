@@ -4,6 +4,9 @@
 still need: obsidian, vscode
 for t480: internal battery replacement, keyboard replacement
           ...then i'm gonna always use an external keyboard lol
+UPDATE 2024-10-24: 
+    internal battery replaced, keyboard replaced
+    storage upgraded 
 
 #===========#
 # ALACRITTY #
@@ -19,6 +22,10 @@ i like aya_dark personally
 # COMMANDS #
 #==========#
 stuff you take for granted, basically
+sudo apt update // general updates and upgrading
+    sudo apt upgrade
+sudo apt-get update // for updating google chrome
+    sudo apt-get --only-upgrade install google-chrome-stable 
 sudo apt install curl // it's curl
 sudo apt install xinput // for checking input devices
 sudo apt install pulseaudio // audio
@@ -31,6 +38,10 @@ sudo apt install imagemagick // useful image tool
 sudo apt install mlocate // locate files on your system
     sudo updatedb // make sure you run this afterwards for locate
 
+#=========#
+#   C++   #
+#=========#
+sudo apt install g++ // compiler
 
 #=========#
 # DISCORD #

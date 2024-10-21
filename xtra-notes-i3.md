@@ -39,4 +39,4 @@ I might not catch all of these either...
 
 
 ## Needs
-- need to get picom to enable transparency in alacritty :(
+- n/a
