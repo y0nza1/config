@@ -1,4 +1,5 @@
 # i3 config file (v4)
+# Last Updated: 2024-10-20 :)
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
@@ -118,8 +119,8 @@ set $ws3 "3: Terminals "
 set $ws4 "4: Terminals "
 set $ws5 "5: Terminals "
 set $ws6 "6: Terminals "
-set $ws7 "7: Terminals "
-set $ws8 "8: Discord "
+set $ws7 "7: Discord "
+set $ws8 "8: Work "
 set $ws9 "9: Work "
 set $ws10 "10: Browsers "
 
@@ -235,6 +236,8 @@ bar {
 exec xinput set-prop "Synaptics TM3276-022" "libinput Tapping Enabled" 1
 # set to natural scrolling with T480 touchpad, use xinput to determine the right device
 exec xinput set-prop "Synaptics TM3276-022" "libinput Natural Scrolling Enabled" 1
+# set to left handed mode with T480 touchpad, use xinput to determine the right device
+exec xinput set-prop "Synaptics TM3275-022" "libinput Left Handed Enabled" 1
 # windows compositor; -f for fading effect
 exec_always picom
 # sets background always
