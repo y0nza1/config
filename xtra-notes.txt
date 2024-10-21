@@ -29,6 +29,7 @@ sudo apt-get update // for updating google chrome
 sudo apt install curl // it's curl
 sudo apt install xinput // for checking input devices
 sudo apt install pulseaudio // audio
+sudo apt-get install ntfs-3g // to read ntfs filesystem crap
 curl https://sh.rustup.rs -sSf | sh // cargo and rust
 sudo apt-get install picom // windows compositor for transparency
 --- imagemagick --
@@ -92,4 +93,15 @@ sudo systemctl enable keyd && sudo systemctl start keyd
 sudo systemctl enable keyd // get started in session
 nano /etc/keyd/default.conf // change config if needed
 sudo keyd reload // reload after config changes
+
+#=========#
+#   USB   #
+#=========#
+for when you want to access stuff from USB drives
+sudo apt-get install ntfs-3g // if ntfs not already inst
+mkdir ~/Mount // temporary mounting directory
+lsblk // check the name of your drives
+sudo mount /dev/sdb1 ~/Mount // just using sdb1 as example
+sudo umount ~/Mount // unmount the dir when finished
+
 
